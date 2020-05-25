@@ -1,0 +1,60 @@
+datacamp database mai 3 tables hai
+
+student (id,name,age)
+
+subject(sub_id,name)
+
+marks(std_id,sub_id,marks)
+
+inner join
+
+student and marks
++------+-----------+------+
+| id   | name      | age  |
++------+-----------+------+
+|    1 | suyash    |   22 |
+|    2 | nidhi     |   21 |
+|    3 | himanshu  |   26 |
+|    4 | bandru    |   21 |
+|    5 | betudaa   |   21 |
+|    6 | arya      |   23 |
+|    7 | ramesh    |   34 |
+|    8 | abhimanyu |   22 |
+|    9 | arjun     |   20 |
++------+-----------+------+
+--------+--------+-------+
+| std_id | sub_id | marks |
++--------+--------+-------+
+|      1 |      2 |    90 |
+|      1 |      1 |    89 |
+|      1 |      3 |    45 |
+|      2 |      1 |    88 |
+|      2 |      2 |    86 |
+|      3 |      1 |    67 |
+|      5 |      1 |    82 |
+|      5 |      3 |    59 |
+|      4 |      1 |    77 |
++--------+--------+-------+
+inner join ke baad on id;
+
++------+----------+--------+-------+
+| id   | name     | sub_id | marks |
++------+----------+--------+-------+
+|    1 | suyash   |      2 |    90 |
+|    1 | suyash   |      1 |    89 |
+|    1 | suyash   |      3 |    45 |
+|    2 | nidhi    |      1 |    88 |
+|    2 | nidhi    |      2 |    86 |
+|    3 | himanshu |      1 |    67 |
+|    5 | betudaa  |      1 |    82 |
+|    5 | betudaa  |      3 |    59 |
+|    4 | bandru   |      1 |    77 |
++------+----------+--------+-------+
+
++--------+-----------+
+| sub_id | name      |
++--------+-----------+
+|      1 | maths     |
+|      2 | physics   |
+|      3 | chemistry |
++--------+-----------+
